@@ -1,0 +1,17 @@
+/// 检查邮箱格式
+bool duIsEmail(String input) {
+  if (input.isEmpty) {
+    // 如果是null 或者是空
+    return false;
+  }
+
+  // 邮箱正则
+  String regexEmail = "^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*\$";
+  return RegExp(regexEmail).hasMatch(input);
+}
+
+/// 检查字符长度
+bool duCheckStringLength(String input, int length) {
+  if (input.isEmpty) return false;
+  return input.length >= length;
+}

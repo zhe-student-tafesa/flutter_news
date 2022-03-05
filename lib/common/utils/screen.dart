@@ -18,11 +18,11 @@ double duSetWidth(double width) {
 }
 
 /// 设置宽度
-num duSetHeight(double height) {
+double duSetHeight(double height) {
   return ScreenUtil().setHeight(height);
 }
 
 /// 设置字体尺寸
-num duSetFontSize(double fontSize) {
+double duSetFontSize(double fontSize) {
   return ScreenUtil().setSp(fontSize);
 }
